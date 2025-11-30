@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library | Pokemon Teaminator</title>
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&display=swap" rel="stylesheet">
+    <script defer src="scripts/test.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Pokémon Teaminator</h1>
+        <a id="page-flipper" href="index.html">
+            <img src="images/bulbasaur.png" alt="bulbasaur read a book" width="80" height="80">
+        </a>
+    </header>
+
+    <main id="library-main">
+        <datalist id="choose-pokemon">
+            <option value="pokeman"></option>
+            <option value="pokewomnan"></option>
+        </datalist>
+        <div id="sort-options">
+            <label for="search-pokemon">
+                <input type="list" list="choose-pokemon" id="search-pokemon" placeholder="Search">
+            </label>
+
+            <label for="p-types">
+                <select name="types" id="p-types">
+                    <option value="">--Type--</option>
+                    <!-- REMEMEBR THE VALUE ATTRIBUTE -->
+                    <option>FERIR</option>
+                    <option>watr</option>
+                    <option>green</option>
+                    <option>fary</option>
+                    <option>darc</option>
+                </select>
+            </label>
+            <label for="generation-selection">
+                <select name="generations" id="generation-selection">
+                    <option value="">--Gen--</option>
+                </select>
+            </label>
+            <label for="color-selection">
+                <select name="colors" id="color-selection">
+                    <option value="">--Color--</option>
+                    <option>red</option>
+                </select>
+            </label>
+            <div id="sort">
+                <button id="sort-button">Search</button>
+            </div>
+        </div>
+        <div class="l-page">
+            <div class="page-item-box">
+                <div class="item-imgbox">
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png" alt=""
+                        width="180" height="180">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>somewhat-armoured-shrimp - WDD330</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,342 @@
+:root {
+    --primary-color: #dc4545;
+    --secondary-color: #89cfd6;
+    --the-other-color: #e0ffdf;
+
+    --text-color: rgb(63, 39, 49);
+
+
+    --highkey-font: 'Press Start 2P';
+    --lowkey-font: 'Manjari';
+
+
+    /* perhaps make an alternative modern-style root just in case? uwu because
+    modern pokeymon is sleek */
+    /* NAHHHH THIS SHADING IS PEAK */
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+* button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+header,
+footer {
+    padding: 1.5rem;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    text-shadow: 2px 2px rgba(80, 67, 116, 0.6);
+    box-shadow: inset 6px -8px 0 rgba(80, 67, 116, 0.3),
+        inset 2px -3px 0 rgba(141, 255, 135, 0.3),
+        inset 0 -70px 0 rgba(116, 0, 79, 0.13),
+        inset -2px 6px 0 0 rgba(255, 220, 174, 0.414);
+}
+
+header {
+    height: 120px;
+    display: flex;
+}
+
+header h1 {
+    align-self: center;
+    font-family: var(--highkey-font);
+    font-size: 19px;
+    max-width: 250px;
+    transition: 0.2s;
+
+    @media (min-width: 430px) {
+        transition: 0.2s;
+        font-size: xx-large;
+    }
+}
+
+#page-flipper {
+    position: absolute;
+    top: 0.8rem;
+    right: 0.5rem;
+    background: var(--primary-color);
+    padding: 0.2rem;
+    box-shadow: inset 3px -5px 0 rgba(80, 67, 116, 0.2),
+        inset 1px -1px 0 rgba(141, 255, 135, 0.1),
+        inset -2px 5px 0 0 rgba(255, 220, 174, 0.293);
+    
+    transition: 1s;
+    /* friknin stupid */
+    &:hover {
+        transition: 1s;
+        transform: rotate(1800deg);
+    }
+}
+
+body {
+    background-color: var(--the-other-color);
+}
+
+footer {
+    font-family: var(--highkey-font);
+    font-size: 10px;
+    padding: 1.5rem;
+}
+
+/* /////////////////////////////// */
+/* actual teaminator page contents */
+/* /////////////////////////////// */
+
+#teaminator-main {
+    display: grid;
+    grid-template-columns: 1fr 9fr 1fr;
+}
+
+.teaminator {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    grid-column: 2 / 3;
+    background: #ecffe8;
+
+    @media (min-width: 400px) {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+
+    }
+
+}
+
+.slot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 1rem;
+    padding: 1rem;
+
+    max-width: 300px;
+    /* ooouf ya some colour like that 😩 thats a pokemon palette if ive ever seen one */
+    background-color: var(--secondary-color);
+    box-shadow: inset 4px -8px 0 rgba(16, 93, 176, 0.149),
+        inset 2px -4px 0 rgba(141, 255, 135, 0.3),
+        inset 0 -35px 0 rgba(16, 144, 176, 0.13),
+        inset -2px 5px 0 0 rgba(225, 255, 212, 0.293);
+    border-radius: 2px;
+}
+
+/* template */
+.img-container {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 200px;
+    height: auto;
+    border: 2px solid rgba(16, 144, 176, 0.3);
+    border-radius: 3px;
+}
+
+.pokeName {
+    font-family: var(--highkey-font);
+    font-size: medium;
+    padding-bottom: 1rem;
+    color: var(--text-color);
+    text-shadow: 2px 2px rgba(16, 93, 176, 0.3);
+}
+
+.slot-things {
+    display: flex;
+    padding-top: 1rem;
+}
+
+input[type=list],
+input[type=text] {
+    font-family: var(--highkey-font);
+    font-size: 10px;
+}
+
+input[type=list],
+input[type=text],
+select {
+    padding-left: 0.3rem;
+    height: 44px;
+    width: 70%;
+    border: 2px solid rgba(16, 144, 176, 0.3);
+    border-radius: 3px;
+
+    &:focus {
+        outline: 2px solid white;
+    }
+}
+
+.slot-options {
+    display: flex;
+    margin-left: 0.5rem;
+}
+
+.slot-options button {
+    height: 50px;
+    width: 44px;
+    background-color: var(--secondary-color);
+    box-shadow: inset -3px -5px 0 rgba(0, 82, 175, 0.2),
+        inset -2px -2px 0 rgba(200, 255, 197, 0.14),
+        inset 2px 2px 0 0 rgba(247, 251, 255, 0.2);
+    border-radius: 2px;
+
+    &:hover {
+        background-color: #85ccd3;
+        box-shadow: inset -3px -4px 0 rgba(0, 82, 175, 0.12),
+            inset 0px -2px 0 rgba(141, 255, 135, 0.1),
+            inset 2px 3px 0 rgba(247, 251, 255, 0.2);
+    }
+
+}
+
+.update-button {
+    font-size: xx-large;
+    font-weight: 600;
+    color: var(--text-color);
+
+    &:hover {
+        color: rgb(49, 29, 37);
+    }
+}
+
+/* DUDE WHAT CNTRAST ISSUES ITS A GIANT RED X (i understand it doesn't have the context for what im using the x for but im just joshin hah hagudsgjhcj)*/
+.delete-button {
+    margin-left: 0.5rem;
+    font-weight: 600;
+    font-family: var(--highkey-font);
+    color: #af1b33;
+    font-size: large;
+
+    &:hover {
+        color: #9c1540;
+    }
+}
+
+#save-team {
+    display: grid;
+    width: 100%;
+    background-color: var(--secondary-color);
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: inset 4px -8px 0 rgba(16, 93, 176, 0.149),
+        inset 2px -4px 0 rgba(141, 255, 135, 0.3),
+        inset 0 -50px 0 rgba(16, 144, 176, 0.13),
+        inset -2px 5px 0 0 rgba(225, 255, 212, 0.293);
+    border-radius: 2px;
+    grid-column: 2 / 3;
+
+    input[type=text] {
+        width: 100%;
+        font-size: large;
+    }
+
+    button {
+        padding: 0.7rem;
+        margin-top: 1rem;
+        font-family: var(--highkey-font);
+        font-weight: 600;
+        background-color: var(--secondary-color);
+        color: var(--text-color);
+        box-shadow: inset -3px -5px 0 rgba(0, 82, 175, 0.2),
+            inset -2px -2px 0 rgba(200, 255, 197, 0.14),
+            inset 2px 2px 0 0 rgba(247, 251, 255, 0.2);
+        border-radius: 2px;
+
+        &:hover {
+            background-color: #85ccd3;
+            box-shadow: inset -3px -4px 0 rgba(0, 82, 175, 0.12),
+                inset 0px -2px 0 rgba(141, 255, 135, 0.1),
+                inset 2px 3px 0 rgba(247, 251, 255, 0.2);
+            color: white;
+        }
+    }
+}
+
+/* /////////////////////////////// */
+/*       poke... index?? omg       */
+/* /////////////////////////////// */
+
+#library-main {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+}
+
+#sort-options {
+    /* display: flex;
+    justify-content: space-between; */
+    display: grid;
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    box-shadow: inset 4px -8px 0 rgba(16, 93, 176, 0.149),
+        inset 2px -3px 0 rgba(141, 255, 135, 0.3),
+        inset 0 -35px 0 rgba(16, 144, 176, 0.13),
+        inset -2px 5px 0 0 rgba(225, 255, 212, 0.293);
+    border-radius: 2px;
+    grid-column: 1 / 4;
+    @media (min-width: 400px) {
+        grid-column: 2 / 3;
+    }
+    
+}
+#sort-options select {
+    height: 44px;
+    width: 100%;
+    font-family: var(--highkey-font);
+    min-width: 70px;
+    margin: 0.2rem;
+}
+
+#sort-button {
+    color: var(--text-color);
+    font-weight: 600;
+    background-color: var(--secondary-color);
+    padding: 0.6rem;
+    box-shadow: inset -3px -5px 0 rgba(0, 82, 175, 0.2),
+        inset -2px -2px 0 rgba(200, 255, 197, 0.14),
+        inset 2px 2px 0 0 rgba(247, 251, 255, 0.2);
+    border-radius: 2px;
+    margin-top: 1rem;
+    font-family: var(--highkey-font);
+    width: 100%;
+
+        &:hover {
+            background-color: #85ccd3;
+            box-shadow: inset -3px -4px 0 rgba(0, 82, 175, 0.12),
+                inset 0px -2px 0 rgba(141, 255, 135, 0.1),
+                inset 2px 3px 0 rgba(247, 251, 255, 0.2);
+            color: white;
+        }
+}
+
+
+
+.page-item-box {
+    margin-top: 2rem;
+    background-color: var(--secondary-color);
+}
+
+.l-page {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    grid-column: 2 / 3;
+    background-color: #ecffe8;
+
+    @media (min-width: 400px) {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    }
+}
+
+.item-imgbox {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    background-color: rgb(255, 255, 255);
+    padding-top: 4rem;
+}

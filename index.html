@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Teaminator | Pokemon Teaminator</title>
+    <meta name="description" content="MAKE A POKEMON TEAM :3">
+    <meta name="author" content="somewhat-armoured-shrimp">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script defer src="scripts/test.js"></script>
+</head>
+
+<body>
+    <!-- WHEN DYNAMICALLY PRODUCING THE THINGS IN THE SECTION 
+     JUST MAKE THEM EMPTY SECTION ELEMENTS WITH STUPID ID NUMBERS -->
+    <header>
+        <h1>Pokémon Teaminator</h1>
+        <a id="page-flipper" href="library.html">
+            <img src="images/bulbasaur.png" alt="bulbasaur read a book" width="80" height="80">
+        </a>
+        <!-- ADD the badly doodled pokemon icon -->
+    </header>
+
+    <main id="teaminator-main">
+        <!-- here's the frickin data or whatever -->
+        <datalist id="choose-pokemon">
+            <option value="pokeman"></option>
+            <option value="pokewomnan"></option>
+        </datalist>
+        <!----------------------------------------->
+        <div class="teaminator">
+            <section class="slot">
+                <h2 class="pokeName">Arbok</h2>
+                <div class="img-container">
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png" alt=""
+                        width="120" height="120">
+                </div>
+                <div class="slot-things">
+                    <!-- or whatever idk -->
+                    <input type="list" id="slot1" list="choose-pokemon" placeholder="Select">
+                    <!--  experimental territory -->
+                    <div class="slot-options">
+                        <button class="update-button">+</button>
+                        <button class="delete-button">X</button>
+                    </div>
+                </div>
+            </section>
+            <section class="slot">
+                <h2 class="pokeName">Skiploom</h2>
+                <div class="img-container">
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/188.png" alt=""
+                        width="120" height="120">
+                </div>
+                <div class="slot-things">
+                    <input type="list" id="slot2" list="choose-pokemon" placeholder="Select">
+
+                    <div class="slot-options">
+                        <button class="update-button">+</button>
+                        <button class="delete-button">X</button>
+                    </div>
+                </div>
+            </section>
+            <section class="slot">
+                <h2 class="pokeName">Skiploom</h2>
+                <div class="img-container">
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/188.png" alt=""
+                        width="120" height="120">
+                </div>
+                <div class="slot-things">
+                    <input type="list" id="slot3" list="choose-pokemon" placeholder="Select">
+
+                    <div class="slot-options">
+                        <button class="update-button">+</button>
+                        <button class="delete-button">X</button>
+                    </div>
+                </div>
+            </section>
+            <section class="slot">
+                <h2 class="pokeName">Skiploom</h2>
+                <div class="img-container">
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/188.png" alt=""
+                        width="120" height="120">
+                </div>
+                <div class="slot-things">
+                    <input type="list" id="slot4" list="choose-pokemon" placeholder="Select">
+
+                    <div class="slot-options">
+                        <button class="update-button">+</button>
+                        <button class="delete-button">X</button>
+                    </div>
+                </div>
+            </section>
+            <section class="slot">
+                <h2 class="pokeName">Skiploom</h2>
+                <div class="img-container">
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/188.png" alt=""
+                        width="120" height="120">
+                </div>
+                <div class="slot-things">
+                    <input type="list" id="slot5" list="choose-pokemon" placeholder="Select">
+
+                    <div class="slot-options">
+                        <button class="update-button">+</button>
+                        <button class="delete-button">X</button>
+                    </div>
+                </div>
+            </section>
+            <section class="slot">
+                <h2 class="pokeName">Skiploom</h2>
+                <div class="img-container">
+                    <img src="" alt="" width="120" height="120">
+                </div>
+                <div class="slot-things">
+                    <input type="list" id="slot6" list="choose-pokemon" placeholder="Select">
+
+                    <div class="slot-options">
+                        <button class="update-button">+</button>
+                        <button class="delete-button">X</button>
+                    </div>
+                </div>
+            </section>
+            <!-- SAVE AND NAME LOAD TEAM ??? dbsbouvsboichoiasnlkdcmxz -->
+
+        </div>
+        <div id="save-team">
+            <label for="insert-name">
+                <input type="text" name="name" id="insert-name">
+            </label>
+            <div id="save-team-buttons">
+                <button id="save-button">SAVE</button>
+                <button id="load-button">LOAD</button>
+                <button id="random-button">Random</button>
+                <button id="reset-button">Reset</button>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <p>somewhat-armoured-shrimp - WDD330</p>
+    </footer>
+</body>
+
+</html>
