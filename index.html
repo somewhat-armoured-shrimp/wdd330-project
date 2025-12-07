@@ -11,115 +11,113 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <script defer src="scripts/test.js"></script>
+    <!-- <script defer src="scripts/test.js"></script> -->
+    <script src="scripts/pokemans.js" type="module"></script>
 </head>
 
 <body>
-    <!-- WHEN DYNAMICALLY PRODUCING THE THINGS IN THE SECTION 
-     JUST MAKE THEM EMPTY SECTION ELEMENTS WITH STUPID ID NUMBERS -->
     <header>
         <h1>Pokémon Teaminator</h1>
         <a id="page-flipper" href="library.html">
             <img src="images/bulbasaur.png" alt="bulbasaur read a book" width="80" height="80">
         </a>
-        <!-- ADD the badly doodled pokemon icon -->
+        
     </header>
 
     <main id="teaminator-main">
-        <!-- here's the frickin data or whatever -->
+        <!-- here's the data or whatever -->
         <datalist id="choose-pokemon">
-            <option value="pokeman"></option>
-            <option value="pokewomnan"></option>
+            
         </datalist>
         <!----------------------------------------->
         <div class="teaminator">
-            <section class="slot">
-                <h2 class="pokeName">Arbok</h2>
-                <div class="img-container">
-                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png" alt=""
+            <section class="slot" id="s0">
+                <h2 class="pokeName" id="pokeName-0"></h2>
+                <div class="img-container" id="img-container-0">
+                    <img src="" alt=""
                         width="120" height="120">
                 </div>
                 <div class="slot-things">
                     <!-- or whatever idk -->
-                    <input type="list" id="slot1" list="choose-pokemon" placeholder="Select">
+                    <input type="list" id="slot-0" list="choose-pokemon" class="poke-input" placeholder="Select">
                     <!--  experimental territory -->
                     <div class="slot-options">
-                        <button class="update-button">+</button>
-                        <button class="delete-button">X</button>
+                        <button class="update-button" id="update-0">+</button>
+                        <button class="delete-button" id="delete-0">X</button>
                     </div>
                 </div>
             </section>
-            <section class="slot">
-                <h2 class="pokeName">Skiploom</h2>
-                <div class="img-container">
-                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/188.png" alt=""
+            <section class="slot" id="s1">
+                <h2 class="pokeName" id="pokeName-1"></h2>
+                <div class="img-container" id="img-container-1">
+                    <img src="" alt=""
                         width="120" height="120">
                 </div>
                 <div class="slot-things">
-                    <input type="list" id="slot2" list="choose-pokemon" placeholder="Select">
+                    <input type="list" id="slot-1" list="choose-pokemon" class="poke-input" placeholder="Select">
 
                     <div class="slot-options">
-                        <button class="update-button">+</button>
-                        <button class="delete-button">X</button>
+                        <button class="update-button" id="update-1">+</button>
+                        <button class="delete-button" id="delete-1">X</button>
                     </div>
                 </div>
             </section>
-            <section class="slot">
-                <h2 class="pokeName">Skiploom</h2>
-                <div class="img-container">
-                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/188.png" alt=""
+            <section class="slot" id="s2">
+                <h2 class="pokeName" id="pokeName-2"></h2>
+                <div class="img-container" id="img-container-2">
+                    <img src="" alt=""
                         width="120" height="120">
                 </div>
                 <div class="slot-things">
-                    <input type="list" id="slot3" list="choose-pokemon" placeholder="Select">
+                    <input type="list" id="slot-2" list="choose-pokemon" class="poke-input" placeholder="Select">
 
                     <div class="slot-options">
-                        <button class="update-button">+</button>
-                        <button class="delete-button">X</button>
+                        <button class="update-button" id="update-2">+</button>
+                        <button class="delete-button" id="delete-2">X</button>
                     </div>
                 </div>
             </section>
-            <section class="slot">
-                <h2 class="pokeName">Skiploom</h2>
-                <div class="img-container">
-                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/188.png" alt=""
+            <section class="slot" id="s3">
+                <h2 class="pokeName" id="pokeName-3"></h2>
+                <div class="img-container" id="img-container-3">
+                    <img src="" alt=""
                         width="120" height="120">
                 </div>
                 <div class="slot-things">
-                    <input type="list" id="slot4" list="choose-pokemon" placeholder="Select">
+                    <input type="list" id="slot-3" list="choose-pokemon" class="poke-input" placeholder="Select">
 
                     <div class="slot-options">
-                        <button class="update-button">+</button>
-                        <button class="delete-button">X</button>
+                        <button class="update-button" id="update-3">+</button>
+                        <button class="delete-button" id="delete-3">X</button>
                     </div>
                 </div>
             </section>
-            <section class="slot">
-                <h2 class="pokeName">Skiploom</h2>
-                <div class="img-container">
-                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/188.png" alt=""
+            <section class="slot" id="s4">
+                <h2 class="pokeName" id="pokeName-4"></h2>
+                <div class="img-container" id="img-container-4">
+                    <img src="" alt=""
                         width="120" height="120">
                 </div>
                 <div class="slot-things">
-                    <input type="list" id="slot5" list="choose-pokemon" placeholder="Select">
+                    <input type="list" id="slot-4" list="choose-pokemon" class="poke-input" placeholder="Select">
 
                     <div class="slot-options">
-                        <button class="update-button">+</button>
-                        <button class="delete-button">X</button>
+                        <button class="update-button" id="update-4">+</button>
+                        <button class="delete-button" id="delete-4">X</button>
                     </div>
                 </div>
             </section>
-            <section class="slot">
-                <h2 class="pokeName">Skiploom</h2>
-                <div class="img-container">
+            <section class="slot" id="5">
+                <h2 class="pokeName" id="pokeName-5"></h2>
+                <div class="img-container" id="img-container-5">
                     <img src="" alt="" width="120" height="120">
                 </div>
                 <div class="slot-things">
-                    <input type="list" id="slot6" list="choose-pokemon" placeholder="Select">
+                    <input type="list" id="slot-5" list="choose-pokemon" class="poke-input" placeholder="Select">
 
                     <div class="slot-options">
-                        <button class="update-button">+</button>
-                        <button class="delete-button">X</button>
+                        <button class="update-button" id="update-5">+</button>
+                        <button class="delete-button" id="delete-5">X</button>
                     </div>
                 </div>
             </section>
@@ -128,7 +126,7 @@
         </div>
         <div id="save-team">
             <label for="insert-name">
-                <input type="text" name="name" id="insert-name">
+                <input type="text" name="name" id="insert-name" required>
             </label>
             <div id="save-team-buttons">
                 <button id="save-button">SAVE</button>

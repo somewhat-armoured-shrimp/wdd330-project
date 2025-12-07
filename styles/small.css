@@ -109,6 +109,22 @@ footer {
 
 }
 
+@keyframes meth {
+    0% {
+        background-color: var(--secondary-color);
+    }
+    40% {
+        background-color: rgb(255, 223, 127);
+    }
+    100% {
+        background-color: var(--secondary-color);
+    }
+}
+
+.meth {
+    animation: 1s ease meth;
+}
+
 .slot {
     display: flex;
     flex-direction: column;
@@ -325,7 +341,8 @@ select {
     justify-items: center;
     grid-column: 2 / 3;
     background-color: #ecffe8;
-
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
     @media (min-width: 400px) {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
